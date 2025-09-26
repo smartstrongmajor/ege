@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anonymous Pro";
+    font-size: 14pt;
+}
+
+.anonymous-pro-regular {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anonymous-pro-bold {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.anonymous-pro-regular-italic {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.anonymous-pro-bold-italic {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+    width: 420px;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    margin: 1%;
+    display: grid;
+    grid-template-columns: 70px 70%;
+    grid-template-areas: "a b"
+                         "a c"
+                         "a d";
+}
+
+.icon {
+    grid-area: a;
+}
+
+.username {
+    grid-area: b;
+    color: blue;
+}
+
+.username p {
+    font-size: 21pt;
+}
+
+.description {
+    grid-area: c;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.menu {
+    grid-area: d;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 3px;
+    padding: 5px;
+    background-color:deeppink;
+}
+
+.menu .active {
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+}
